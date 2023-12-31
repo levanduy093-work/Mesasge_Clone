@@ -42,5 +42,5 @@ struct ChatMessageCell: View {
 }
 
 #Preview {
-    ChatMessageCell(isFromCurrentUser: true)
+    ChatMessageCell(isFromCurrentUser: false)
 }
