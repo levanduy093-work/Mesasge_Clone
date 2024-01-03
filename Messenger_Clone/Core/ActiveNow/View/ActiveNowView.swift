@@ -8,26 +8,31 @@
 import SwiftUI
 
 struct ActiveNowView: View {
+    @StateObject var viewModel = ActiveNowViewModel()
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 32) {
-                ForEach(0..<10, id: \.self) { num in
-                    VStack {
-                        ZStack(alignment: .bottomTrailing) {
-                            Image(systemName: "person.circle.fill")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 64, height: 64)
-                                .foregroundColor(Color(.systemGray4))
-                            ZStack {
-                                Circle()
-                                    .fill(.white)
-                                    .frame(width: 18, height: 18)
+                ForEach(viewModel.users, id: \.self) { user in
+                    NavigationLink(value: Route.chatView(user)) {
+                        VStack {
+                            ZStack(alignment: .bottomTrailing) {
+                                CircularProfileImageView(user: user, size: .medium)
                                 
-                                Circle()
-                                    .fill(.green)
-                                    .frame(width: 12, height: 12)
+                                ZStack {
+                                    Circle()
+                                        .fill(.white)
+                                        .frame(width: 18, height: 18)
+                                    
+                                    Circle()
+                                        .fill(.green)
+                                        .frame(width: 12, height: 12)
+                                }
                             }
+                            
+                            Text(user.firstName)
+                                .font(.footnote)
+                                .foregroundColor(.gray)
                         }
                     }
                 }
