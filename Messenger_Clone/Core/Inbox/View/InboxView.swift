@@ -13,6 +13,8 @@ struct InboxView: View {
     @State private var selectedUser: User?
     @State private var showChat = false
     
+    
+    
     private var user: User? {
         return viewModel.currentUser
     }

@@ -10,7 +10,7 @@ import FirebaseFirestoreSwift
 
 struct User: Codable, Identifiable, Hashable {
     @DocumentID var uid: String?
-    let fullname: String
+    let fullname: String?
     let email: String
     var profileImageUrl: String?
     
@@ -20,8 +20,8 @@ struct User: Codable, Identifiable, Hashable {
     
     var firstName: String {
         let formatter = PersonNameComponentsFormatter()
-        let components = formatter.personNameComponents(from: fullname)
-        return components?.givenName ?? fullname
+        let components = formatter.personNameComponents(from: fullname ?? "")
+        return components?.givenName ?? fullname!
     }
 }
 

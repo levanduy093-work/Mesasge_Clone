@@ -16,6 +16,8 @@
 		CC0C4D2D2B43FB2500FC063E /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0C4D2C2B43FB2500FC063E /* ChatService.swift */; };
 		CC0C4D302B43FCC900FC063E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0C4D2F2B43FCC900FC063E /* Constants.swift */; };
 		CC246E342B444DA0005FBF3D /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC246E332B444DA0005FBF3D /* InboxService.swift */; };
+		CC4E8A4D2B474468008DD7A4 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4E8A4C2B474468008DD7A4 /* EditProfileView.swift */; };
+		CC4E8A502B475AA5008DD7A4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CC4E8A4F2B475AA5008DD7A4 /* Kingfisher */; };
 		CC624E5F2B30C6AF004EECBE /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC624E5E2B30C6AF004EECBE /* InboxRowView.swift */; };
 		CC624E632B30CB62004EECBE /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC624E622B30CB62004EECBE /* NewMessageView.swift */; };
 		CC65966F2B2F920D00D7AB5A /* Messenger_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65966E2B2F920D00D7AB5A /* Messenger_CloneApp.swift */; };
@@ -25,6 +27,8 @@
 		CC8ACBB72B4516610041CD0D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACBB62B4516610041CD0D /* Date.swift */; };
 		CC8ACBBB2B451B820041CD0D /* ActiveNowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACBBA2B451B820041CD0D /* ActiveNowViewModel.swift */; };
 		CC8ACBBE2B451F740041CD0D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACBBD2B451F740041CD0D /* Route.swift */; };
+		CC8ACBC02B46E54D0041CD0D /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACBBF2B46E54D0041CD0D /* EditProfileViewModel.swift */; };
+		CC8ACBC22B46EA740041CD0D /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACBC12B46EA740041CD0D /* ImageUploader.swift */; };
 		CC97ABEB2B319D110071C671 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97ABEA2B319D110071C671 /* ProfileView.swift */; };
 		CC97ABEE2B319F070071C671 /* SettingOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97ABED2B319F070071C671 /* SettingOptionViewModel.swift */; };
 		CC97ABF02B31A2730071C671 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97ABEF2B31A2730071C671 /* ProfileViewModel.swift */; };
@@ -82,6 +86,7 @@
 		CC0C4D2C2B43FB2500FC063E /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		CC0C4D2F2B43FCC900FC063E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CC246E332B444DA0005FBF3D /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
+		CC4E8A4C2B474468008DD7A4 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		CC624E5E2B30C6AF004EECBE /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 		CC624E622B30CB62004EECBE /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		CC65966B2B2F920D00D7AB5A /* Messenger_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +97,8 @@
 		CC8ACBB62B4516610041CD0D /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		CC8ACBBA2B451B820041CD0D /* ActiveNowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowViewModel.swift; sourceTree = "<group>"; };
 		CC8ACBBD2B451F740041CD0D /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		CC8ACBBF2B46E54D0041CD0D /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		CC8ACBC12B46EA740041CD0D /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		CC97ABEA2B319D110071C671 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CC97ABED2B319F070071C671 /* SettingOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionViewModel.swift; sourceTree = "<group>"; };
 		CC97ABEF2B31A2730071C671 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -133,6 +140,7 @@
 				CCD8B8E12B3C3838006DEFD5 /* FirebaseInAppMessaging-Beta in Frameworks */,
 				CCD8B8D32B3C3838006DEFD5 /* FirebaseDatabaseSwift in Frameworks */,
 				CCD8B8DD2B3C3838006DEFD5 /* FirebaseFunctions in Frameworks */,
+				CC4E8A502B475AA5008DD7A4 /* Kingfisher in Frameworks */,
 				CCD8B8F32B3C3838006DEFD5 /* FirebaseStorageCombine-Community in Frameworks */,
 				CCD8B8ED2B3C3838006DEFD5 /* FirebaseRemoteConfig in Frameworks */,
 				CCD8B8C92B3C3838006DEFD5 /* FirebaseAppDistribution-Beta in Frameworks */,
@@ -164,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				CCD8B94B2B3FFDD2006DEFD5 /* UserService.swift */,
+				CC8ACBC12B46EA740041CD0D /* ImageUploader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -375,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				CC97ABEA2B319D110071C671 /* ProfileView.swift */,
+				CC4E8A4C2B474468008DD7A4 /* EditProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -384,6 +394,7 @@
 			children = (
 				CC97ABED2B319F070071C671 /* SettingOptionViewModel.swift */,
 				CC97ABEF2B31A2730071C671 /* ProfileViewModel.swift */,
+				CC8ACBBF2B46E54D0041CD0D /* EditProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -517,6 +528,7 @@
 				CCD8B8EE2B3C3838006DEFD5 /* FirebaseRemoteConfigSwift */,
 				CCD8B8F02B3C3838006DEFD5 /* FirebaseStorage */,
 				CCD8B8F22B3C3838006DEFD5 /* FirebaseStorageCombine-Community */,
+				CC4E8A4F2B475AA5008DD7A4 /* Kingfisher */,
 			);
 			productName = Messenger_Clone;
 			productReference = CC65966B2B2F920D00D7AB5A /* Messenger_Clone.app */;
@@ -548,6 +560,7 @@
 			mainGroup = CC6596622B2F920D00D7AB5A;
 			packageReferences = (
 				CCD8B8BD2B3C3838006DEFD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CC4E8A4E2B475AA5008DD7A4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = CC65966C2B2F920D00D7AB5A /* Products */;
 			projectDirPath = "";
@@ -583,6 +596,7 @@
 				CCD8B94F2B400A87006DEFD5 /* InboxViewModel.swift in Sources */,
 				CC97ABEE2B319F070071C671 /* SettingOptionViewModel.swift in Sources */,
 				CC09C0712B307424005CDEEC /* LoginView.swift in Sources */,
+				CC8ACBC22B46EA740041CD0D /* ImageUploader.swift in Sources */,
 				CCD8B8F92B3C38EE006DEFD5 /* RegistrationViewModel.swift in Sources */,
 				CCD8B8FB2B3C390B006DEFD5 /* AuthService.swift in Sources */,
 				CCD8B94C2B3FFDD2006DEFD5 /* UserService.swift in Sources */,
@@ -593,6 +607,7 @@
 				CC6596712B2F920D00D7AB5A /* ContentView.swift in Sources */,
 				CC8ACBBB2B451B820041CD0D /* ActiveNowViewModel.swift in Sources */,
 				CC624E5F2B30C6AF004EECBE /* InboxRowView.swift in Sources */,
+				CC4E8A4D2B474468008DD7A4 /* EditProfileView.swift in Sources */,
 				CCD8B9522B4130F0006DEFD5 /* NewMessageViewModel.swift in Sources */,
 				CC0C4D302B43FCC900FC063E /* Constants.swift in Sources */,
 				CC97ABF22B31A4930071C671 /* User.swift in Sources */,
@@ -602,6 +617,7 @@
 				CC65966F2B2F920D00D7AB5A /* Messenger_CloneApp.swift in Sources */,
 				CC8ACBBE2B451F740041CD0D /* Route.swift in Sources */,
 				CCD8B95E2B4148A8006DEFD5 /* ChatViewModel.swift in Sources */,
+				CC8ACBC02B46E54D0041CD0D /* EditProfileViewModel.swift in Sources */,
 				CC97ABF02B31A2730071C671 /* ProfileViewModel.swift in Sources */,
 				CCD8B8FF2B3C3F3A006DEFD5 /* ContentViewModel.swift in Sources */,
 				CC97ABEB2B319D110071C671 /* ProfileView.swift in Sources */,
@@ -816,6 +832,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CC4E8A4E2B475AA5008DD7A4 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.1;
+			};
+		};
 		CCD8B8BD2B3C3838006DEFD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -827,6 +851,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CC4E8A4F2B475AA5008DD7A4 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC4E8A4E2B475AA5008DD7A4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		CCD8B8BE2B3C3838006DEFD5 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CCD8B8BD2B3C3838006DEFD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

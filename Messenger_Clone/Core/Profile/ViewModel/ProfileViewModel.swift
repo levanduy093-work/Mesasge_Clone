@@ -7,7 +7,9 @@
 
 import SwiftUI
 import PhotosUI
+import Firebase
 
+@MainActor
 class ProfileViewModel: ObservableObject {
     @Published var selectedItem: PhotosPickerItem? {
         didSet { 

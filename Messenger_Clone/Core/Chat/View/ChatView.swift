@@ -24,7 +24,7 @@ struct ChatView: View {
                     CircularProfileImageView(user: user, size: .xLarge)
                     
                     VStack(spacing: 4) {
-                        Text(user.fullname)
+                        Text(user.fullname ?? "")
                             .font(.title3)
                             .fontWeight(.semibold)
                         
@@ -64,7 +64,7 @@ struct ChatView: View {
             }
             .padding()
         }
-        .navigationTitle(user.fullname)
+        .navigationTitle(user.fullname ?? "")
         .navigationBarTitleDisplayMode(.inline)
     }
 }

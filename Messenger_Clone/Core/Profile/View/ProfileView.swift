@@ -9,28 +9,44 @@ import SwiftUI
 import PhotosUI
 
 struct ProfileView: View {
-    @StateObject var viewModel = ProfileViewModel()
+    @State private var isShowEditProfileView = false
+//    @StateObject var viewModel = ProfileViewModel()
     let user: User
     
     var body: some View {
         VStack {
             // header
             VStack {
-                PhotosPicker(selection: $viewModel.selectedItem) {
-                    if let profileImage = viewModel.profileImage {
-                        profileImage
-                            .resizable()
-                            .frame(width: 80, height: 80)
-                            .foregroundColor(Color(.systemGray4))
-                            .clipShape(.circle)
-                    } else {
-                        CircularProfileImageView(user: user, size: .xLarge)
-                    }
-                }
+//                PhotosPicker(selection: $viewModel.selectedItem) {
+//                    if let profileImage = viewModel.profileImage {
+//                        profileImage
+//                            .resizable()
+//                            .frame(width: 80, height: 80)
+//                            .foregroundColor(Color(.systemGray4))
+//                            .clipShape(.circle)
+//                    } else {
+//                        CircularProfileImageView(user: user, size: .xLarge)
+//                    }
+//                }
                 
-                Text(user.fullname)
+                CircularProfileImageView(user: user, size: .xLarge)
+                
+                
+                
+                Text(user.fullname ?? "")
                     .font(.title2)
                     .fontWeight(.semibold)
+                
+                Button(action: {
+                    isShowEditProfileView.toggle()
+                }, label: {
+                    Text("Edit profile")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                })
+                .fullScreenCover(isPresented: $isShowEditProfileView, content: {
+                    EditProfileView(user: user)
+                })
             }
             
             // List
