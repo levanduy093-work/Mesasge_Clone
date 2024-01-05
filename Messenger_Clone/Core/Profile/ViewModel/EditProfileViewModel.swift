@@ -53,6 +53,10 @@ class EditProfileViewModel: ObservableObject {
             data["profileImageUrl"] = imageUrl
         }
         
+        if !fullname.isEmpty && user.fullname != fullname {
+            data["fullname"] = fullname
+        }
+        
         if !data.isEmpty {
             try await FirestoreConstants.UserCollection.document(user.id).updateData(data)
         }

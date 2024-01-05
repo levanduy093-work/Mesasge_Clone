@@ -38,6 +38,7 @@ struct EditProfileView: View {
                     Task {
                         dismiss()
                         try await viewModel.updateUserData()
+                        try await UserService.shared.fetchCurrentUser()
                     }
                 }, label: {
                     Text("Done")
@@ -68,6 +69,22 @@ struct EditProfileView: View {
                 }
             }
             .padding(.vertical, 8)
+            
+            HStack {
+                Text("Name")
+                    .padding(.leading, 8)
+                    .frame(width: 100, alignment: .leading)
+                
+                VStack {
+                    TextField("Enter your full name", text: $viewModel.fullname)
+                        .autocapitalization(.words)
+                        .autocorrectionDisabled()
+
+                    Divider()
+                }
+            }
+            .font(.subheadline)
+            .frame(height: 36)
             
             Spacer()
         }
